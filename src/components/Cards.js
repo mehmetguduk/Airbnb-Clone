@@ -1,17 +1,18 @@
 import Card from "./Card"
-import katie from "../images/katie.jpg"
+import data from "../Data"
 
 export default function Cards() {
+    const items = data.map(item => {
+        return (
+            <Card
+                key={item.id}
+                item={item}
+            />
+        )
+    })
     return (
         <div className="cards">
-            <Card
-                img={katie}
-                rate="5.0"
-                review={6}
-                country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-            />
+            {items}
         </div>
     )
 

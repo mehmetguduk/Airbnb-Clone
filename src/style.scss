@@ -18,35 +18,64 @@ nav {
 
     img.airbnb-logo {
         max-width: 100px;
+        cursor: pointer;
+        -webkit-user-drag: none;
     }
 }
 
 section.hero {
-    padding: 20px;
     display: flex;
+    padding: 20px;
     flex-direction: column;
 
     img.hero-image {
+        width: 100%;
         max-width: 800px;
         align-self: center;
+        -webkit-user-drag: none;
     }
     h1.hero-header {
-        margin-bottom: 16px;
+        text-align: center;
+        margin-top: 40px;
     }
     p.hero-text {
+        text-align: center;
         font-weight: 600;
         opacity: 0.6;
+        margin-bottom: 40px;
     }
 }
 
 div.cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    margin: 0 30px 100px 30px;
+
     div.card {
-        width: 175px;
-        font-size: 12px;
+        min-width: 160px;
+        width: 160px;
+        font-size: 13px;
+        position: relative;
+        cursor: pointer;
+
+        div.card-badge {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            background-color: white;
+            padding: 1px 3px;
+            border-radius: 2px;
+            font-weight: 600;
+        }
 
         img.card-image {
             width: 100%;
             border-radius: 9px;
+            margin-bottom: 9px;
+            -webkit-user-drag: none;
         }
 
         div.card-stats {
@@ -55,6 +84,14 @@ div.cards {
 
             img.card-star {
                 height: 16px;
+                padding-bottom: 4px;
+                margin-right: 5px;
+            }
+
+            span.card-rate,
+            span.card-review,
+            span.card-location {
+                margin: 0 2px;
             }
         }
 
@@ -64,6 +101,20 @@ div.cards {
 
         span.bold {
             font-weight: 600;
+        }
+
+        p.card-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.card-price {
+            margin-top: auto;
+        }
+
+        p.card-online {
+            font-weight: 600;
+            color: green;
         }
     }
 }
