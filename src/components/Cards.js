@@ -1,3 +1,9 @@
+/*
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
+*/
+
 import Card from "./Card"
 import data from "../Data"
 
@@ -11,8 +17,10 @@ export default function Cards() {
         )
     })
     return (
-        <div className="cards">
-            {items}
+        <div className="cards-container">
+            <div className="cards">
+                {items}
+            </div>
         </div>
     )
 

@@ -1,3 +1,9 @@
+/*
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
 * {
@@ -46,75 +52,79 @@ section.hero {
     }
 }
 
-div.cards {
+div.cards-container {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-    gap: 20px;
-    overflow-x: auto;
-    margin: 0 30px 100px 30px;
 
-    div.card {
-        min-width: 160px;
-        width: 160px;
-        font-size: 13px;
-        position: relative;
-        cursor: pointer;
+    div.cards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        overflow-x: auto;
+        margin: 0 30px 100px 30px;
 
-        div.card-badge {
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            background-color: white;
-            padding: 1px 3px;
-            border-radius: 2px;
-            font-weight: 600;
-        }
+        div.card {
+            min-width: 160px;
+            width: 160px;
+            font-size: 13px;
+            position: relative;
+            cursor: pointer;
 
-        img.card-image {
-            width: 100%;
-            border-radius: 9px;
-            margin-bottom: 9px;
-            -webkit-user-drag: none;
-        }
-
-        div.card-stats {
-            display: flex;
-            align-items: center;
-
-            img.card-star {
-                height: 16px;
-                padding-bottom: 4px;
-                margin-right: 5px;
+            div.card-badge {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                background-color: white;
+                padding: 1px 3px;
+                border-radius: 2px;
+                font-weight: 600;
             }
 
-            span.card-rate,
-            span.card-review,
-            span.card-location {
-                margin: 0 2px;
+            img.card-image {
+                width: 100%;
+                border-radius: 9px;
+                margin-bottom: 9px;
+                -webkit-user-drag: none;
             }
-        }
 
-        span.gray {
-            color: #918e9b;
-        }
+            div.card-stats {
+                display: flex;
+                align-items: center;
 
-        span.bold {
-            font-weight: 600;
-        }
+                img.card-star {
+                    height: 16px;
+                    padding-bottom: 4px;
+                    margin-right: 5px;
+                }
 
-        p.card-title {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+                span.card-rate,
+                span.card-review,
+                span.card-location {
+                    margin: 0 2px;
+                }
+            }
 
-        p.card-price {
-            margin-top: auto;
-        }
+            span.gray {
+                color: #918e9b;
+            }
 
-        p.card-online {
-            font-weight: 600;
-            color: green;
+            span.bold {
+                font-weight: 600;
+            }
+
+            p.card-title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p.card-price {
+                margin-top: auto;
+            }
+
+            p.card-online {
+                font-weight: 600;
+                color: green;
+            }
         }
     }
 }
