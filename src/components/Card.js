@@ -10,9 +10,9 @@ export default function Card(props) {
     return (
         <div className="card">
             {props.item.openspots === 0 && <div className="card-badge">SOLD OUT</div>}
-            <img src={props.item.coverImg} className="card-image" />
+            <img src={props.item.coverImg} className="card-image" alt="Card Cover"/>
             <div className="card-stats" >
-                <img src={star} className="card-star" />
+                <img src={star} className="card-star" alt="A mini pink star"/>
                 <span className="card-rate bold">{props.item.stats.rating}</span>
                 <span className="card-review gray">({props.item.stats.reviewCount})</span>
                 <span className="card-location gray">• {props.item.location}</span>

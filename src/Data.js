@@ -7,16 +7,13 @@
 import img1 from "./images/card-images/img1.jpg";
 import img2 from "./images/card-images/img2.jpg";
 import img3 from "./images/card-images/img3.jpg";
-import img4 from "./images/card-images/img4.jpg";
 import img5 from "./images/card-images/img5.jpg";
 import img6 from "./images/card-images/img6.jpg";
 import img7 from "./images/card-images/img7.jpg";
 import img8 from "./images/card-images/img8.jpg";
 import img9 from "./images/card-images/img9.jpg";
-import img10 from "./images/card-images/img10.jpg";
 
-
-export default [
+const data = [
     {
         id: 1,
         title: "Learn Professional Swimming Techniques",
@@ -130,3 +127,5 @@ export default [
         online: false
     }
 ]
+
+export default data
